@@ -100,7 +100,7 @@ class EleccionController extends Controller
     {
         $this->validateData($request);
 
-
+       
         $campos=[
             'periodo' => $request->periodo,
             'fecha'    => $request->fecha,
@@ -110,7 +110,7 @@ class EleccionController extends Controller
             'horacierre'   => $request->horacierre,
             'observaciones'   => $request->observaciones,
         ];
-
+        
         Eleccion::whereId($id)->update($campos);
         return redirect('eleccion')->with('success', 'Actualizado correctamente...');
     }
