@@ -46,9 +46,8 @@
             @csrf
             @method('DELETE')
             <button class="btn btn-danger" type="submit"
-            onclick="return confirm('Esta seguro de borrar {{$eleccion->ubicacion}}')">delete<i class="fa fa-trash" aria-hidden="true"></i></button>
+            onclick="return confirm('Esta seguro de borrar {{$eleccion->ubicacion}}')">Delete <i class="fa fa-trash" aria-hidden="true"></i></button>
             </form>
-            
             </td>
         </tr>
         @endforeach

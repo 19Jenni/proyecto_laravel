@@ -42,7 +42,7 @@
                 @csrf
                 @method('DELETE')
                 <button class="btn btn-danger" type="submit"
-                onclick="return confirm('Esta seguro de borrar {{$voto->id}}')" >Del</button>
+                onclick="return confirm('Esta seguro de borrar {{$voto->id}}')">Delete</button>
             </form>
             </td>
             
