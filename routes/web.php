@@ -1,11 +1,14 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\PDFController;
 use App\Http\Controllers\CasillaController;
 use App\Http\Controllers\CandidatoController;
 use App\Http\Controllers\VotoController;
 use App\Http\Controllers\EleccionController;
 use App\Http\Controllers\Auth\LoginController;
+
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -20,6 +23,12 @@ use App\Http\Controllers\Auth\LoginController;
 Route::get('/', function () {
     return view('welcome');
 });
+Route::get('preview', 'App\Http\Controllers\PDFController@preview');
+Route::get('download', 'App\Http\Controllers\PDFController@download')->name('download');
+
+Route::get('casilla/pdf', [CasillaController::class,'generatepdf']);
+
+
 Route::resource('casilla', CasillaController::class);
 Route::resource('candidato', CandidatoController::class);
 Route::resource('voto', VotoController::class);
@@ -36,3 +45,5 @@ Route::middleware(['auth'])->group(function(){
     Route::resource('voto', VotoController::class);
 
 });
+Route::get('generate-pdf', [PDFController::class, 'generatePDF']);
+
