@@ -84,7 +84,7 @@ class LoginController extends Controller
         {  
             $auth_user = Socialite::driver('facebook')->user(); // Fetch authenticated user
            // dd($auth_user);
-           return redirect ("/candidato");
+           return redirect ("/menu");
         } 
     public function logout(request $request)
 
