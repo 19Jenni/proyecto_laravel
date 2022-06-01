@@ -1,4 +1,4 @@
-@extends('plantilla')
+@extends('menu')
 @section('content')
 <style>
     .uper {

@@ -7,7 +7,7 @@
 </style>
 <div class="card uper">
     <div class="card-header">
-    <center>Bienvenido al Registro de  eleccion 2022</center>
+    <h1>Bienvenido al Registro de  eleccion 2022</h1>
     </div>
     <div class="card-body">
         @if ($errors->any())

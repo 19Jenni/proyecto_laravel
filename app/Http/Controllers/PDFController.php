@@ -6,7 +6,6 @@ use Illuminate\Http\Request;
 use mikehaertl\wkhtmlto\Pdf;
 /*use PDF;*/
 
-
 class PDFController extends Controller
 
 {
@@ -39,13 +38,9 @@ class PDFController extends Controller
     {
 
         $render = view('chart')->render();
-  
         $pdf = new Pdf;
-
         $pdf->addPage($render);
-
         $pdf->setOptions(['javascript-delay' => 5000]);
-
         $pdf->saveAs(public_path('report.pdf'));
 
     }
@@ -57,15 +52,12 @@ class PDFController extends Controller
         $data = [
 
             'title' => 'Welcome to ItSolutionStuff.com',
-
             'date' => date('m/d/Y')
 
         ];
 
           
         $pdf = PDF::loadView('myPDF', $data);
-
-    
         return $pdf->download('itsolutionstuff.pdf');
 
     }
