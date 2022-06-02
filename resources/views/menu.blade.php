@@ -86,10 +86,28 @@
                 <h5>Elección de la Reina ITVO</h5>
             </div>
             <div class="col-md-2">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/9/9d/TecNM_logo.png" width="150px" style="margin: 7%;">
-            </div>
-
+                <img src="https://upload.wikimedia.org/wikipedia/commons/9/9d/TecNM_logo.png" width="100px" style="margin: 7%;">
         </div>
+        </div>
+            <div class=" text-center">
+                <img src="https://imagenes.elpais.com/resizer/vhStKePmt7AFilJd-66WV3-rcTc=/1960x1470/arc-anglerfish-eu-central-1-prod-prisa.s3.amazonaws.com/public/JCT7C2ECC6GLOREXF56YVVA2DQ.jpg" width="600px" tyle="margin: 50%;">     
+                <img src= "https://i.pinimg.com/564x/3f/50/66/3f506657ea7b9a17ef73637af10bcdfb.jpg" width="450px" tyle="margin: 30%;">     
+<div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
     </header>
     <div class="container">
         @yield('content')
