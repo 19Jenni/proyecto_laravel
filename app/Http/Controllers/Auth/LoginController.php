@@ -6,7 +6,9 @@ use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Providers\RouteServiceProvider;
 use Illuminate\Foundation\Auth\AuthenticatesUsers;
-use Laravel\Socialite\Facades\Socialite as Socialite;
+//use Laravel\Socialite\Facades\Socialite as Socialite;
+use Illuminate\Support\Facades\Auth;
+use Socialite;
 
 class LoginController extends Controller
 {
@@ -90,9 +92,9 @@ class LoginController extends Controller
 
     {
         Auth::logout();
-        $request -> sesssion ()->invalidate ();
-        $request -> session ()-> regerateTocken();
-        return redirected ("Login");
+        $request -> session ()->invalidate ();
+        $request -> session ()-> regenerateToken();
+        return redirect ("login")->with(Auth::logout());
     }
     /**
      * Remove the specified resource from storage.

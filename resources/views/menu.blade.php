@@ -69,7 +69,7 @@
                             cerrar seción
                             </a>
                             <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                <a class="dropdown-item" href="http://localhost:8888/login">iniciar</a>
+                                
                                 <a class="dropdown-item" href="http://localhost:8888/logout">cerrar</a>
                             </div>
                         </li>
@@ -88,27 +88,20 @@
             <div class="col-md-2">
                 <img src="https://upload.wikimedia.org/wikipedia/commons/9/9d/TecNM_logo.png" width="100px" style="margin: 7%;">
         </div>
-        </div>
-            <div class=" text-center">
-                <img src="https://imagenes.elpais.com/resizer/vhStKePmt7AFilJd-66WV3-rcTc=/1960x1470/arc-anglerfish-eu-central-1-prod-prisa.s3.amazonaws.com/public/JCT7C2ECC6GLOREXF56YVVA2DQ.jpg" width="600px" tyle="margin: 50%;">     
-                <img src= "https://i.pinimg.com/564x/3f/50/66/3f506657ea7b9a17ef73637af10bcdfb.jpg" width="450px" tyle="margin: 30%;">     
-<div>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-    </header>
+         
+   </header>
+   <main>
+       <section style="margin-left: 13.4%; margin-right: 13.4%">
+       <div class="container">
+           <div class="row">
+            <div class="col-sm text-center">
+            <img src="https://imagenes.elpais.com/resizer/vhStKePmt7AFilJd-66WV3-rcTc=/1960x1470/arc-anglerfish-eu-central-1-prod-prisa.s3.amazonaws.com/public/JCT7C2ECC6GLOREXF56YVVA2DQ.jpg" height="300px" >
+            </div>
+            <div class="col-sm text-center">
+            <img src="https://i.pinimg.com/564x/3f/50/66/3f506657ea7b9a17ef73637af10bcdfb.jpg" height="300px"style="margin: 0%;">
+            </div></div>
+       </section>
+        </main> 
     <div class="container">
         @yield('content')
     </div>

@@ -16,7 +16,7 @@
     <header>
         <div class="row">
             <div class="col-md-2">
-                <img src="/tecnm_sintexto.svg" width="200px">
+                <img src="  https://pinotepa.tecnm.mx/wp-content/uploads/2020/03/LOGO_TECNM_AZUL.png" width="200px">
             </div>
             <div class="col-md-8 text-center">
                 <h1>Instituto Tecnológico del Valle de Oaxaca</h1>
